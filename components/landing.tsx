@@ -2,7 +2,6 @@ import landing from "../public/images/landing-image.png";
 import Image from "next/image";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import stylesN from '../styles/Home.module.css';
-import Posts from "@/pages/posts";
 
 
 export default function Landing() {
@@ -11,7 +10,7 @@ export default function Landing() {
     <div className={stylesN.landing}>
         <div className={stylesN.container}>
             <div className={stylesN.text}>
-                <h1 className={stylesN.headOne}>Welcome , To Blog World</h1>
+                <h1 className={stylesN.headOne}>Welcome , To Blog Application</h1>
                 <p className={stylesN.parag}>
                     Here Iam gonna share everything about my life. Books Iam reading,
                     Games Iam Playing, Stories and Events
