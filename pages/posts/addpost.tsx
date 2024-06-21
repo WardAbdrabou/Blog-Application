@@ -10,18 +10,19 @@ export default function AddPost() {
 
     // //function CREATE POST
     async function HandleSubmit() {
-        const form = new  FormData();
-        form.append('title', title);
-        form.append("body" , body);
-        try {
-            const res = await axios.post(`baseURL/create`,form) ;
-            console.log(res);         
-            alert('you successfully add new post')  
-            window.location.pathname = "/posts";
-        } catch (err) {
-            setErr('try again');
-            console.log(err)
-        }
+        alert('you successfully add new post')  
+        // const form = new  FormData();
+        // form.append('title', title);
+        // form.append("body" , body);
+        // try {
+        //     const res = await axios.post(`http://127.0.0.1:8000/api/post/create_post`,form) ;
+        //     console.log(res);         
+        //     // alert('you successfully add new post')  
+        //     // window.location.pathname = "/posts";
+        // } catch (err) {
+        //     setErr('try again');
+        //     console.log(err)
+        // }
 
     }
     return (
@@ -52,7 +53,7 @@ export default function AddPost() {
                 <button 
                 disabled={
                     title.length > 1 
-                    ? false : true
+                    ? false  : true
                     } className={styles.btnpost}>Create Post</button>
                     </div>
 
